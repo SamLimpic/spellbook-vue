@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header class="container-fluid">
+    <div class="row justify-content-start p-3">
+      <div class="col">
+        <h1 class="title">
+          Y<u
+            >our<span
+              ><img class="logo" alt="Vue logo" src="./assets/logo.png" /></span
+            >irtual Spellbook</u
+          >
+        </h1>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Berkshire Swash", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.logo {
+  height: 2.5rem;
+}
+
+.title {
+  color: forestgreen;
 }
 </style>

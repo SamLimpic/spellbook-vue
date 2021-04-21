@@ -13,6 +13,6 @@ export default class Spell {
     this.level = level
     this.damage = damage.damage_at_slot_level[0] + damage.damage_type.name
     this.school = school.name
-    this.img = require("./assets/" + school.toLowerCase() + ".png")
+    this.img = require("../assets/" + school.toLowerCase() + ".png")
   }
 }
